@@ -1,2 +1,30 @@
 
 /* Your CSS Code here. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.container>div{
+    
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
