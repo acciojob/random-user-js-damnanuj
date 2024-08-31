@@ -4,7 +4,7 @@ const number = document.querySelector(".number");
 const age = document.querySelector(".age");
 const email = document.querySelector(".email");
 const phone = document.querySelector(".phone");
-const getAnotherBtn = document.querySelector(".getAnotherBtn");
+const getUser = document.querySelector("#getUser");
 
 const apiUrl = "https://randomuser.me/api/";
 let userData = {};
@@ -53,7 +53,7 @@ age.addEventListener("click", () => showInfo("age"));
 email.addEventListener("click", () => showInfo("email"));
 phone.addEventListener("click", () => showInfo("phone"));
 
-getAnotherBtn.addEventListener("click", () => {
+getUser.addEventListener("click", () => {
   fetchUser();
   document.querySelector(".additional-info").textContent = "";
 });
